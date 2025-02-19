@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPost } from "../actions/post.action";
+import { addPost, getPosts } from "../actions/post.action";
 
 
 const PostForm = () => {
@@ -18,13 +18,14 @@ const PostForm = () => {
       likes: 0
     }
 
-    dispatch(addPost(postData))
-    form.current.reset()
+    await dispatch(addPost(postData))
+    dispatch(getPosts())
+    form.current.reset();
   }
 
   return (
     <div className="form-container">
-      <form ref={form} onSubmit={(e) => handleForm(e)}>
+      <form ref={form} onSubmit={e => handleForm(e)}>
         <input type="text" placeholder="Titre du poste" />
         <textarea placeholder="Postez vos pensées..."></textarea>
         <input type="submit" value="Envoyer" />

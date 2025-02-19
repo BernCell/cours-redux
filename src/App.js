@@ -8,7 +8,6 @@ import { isEmpty } from "./components/Utils";
 const App = () => {
   // const [content, setContent] = useState()
   const posts = useSelector((state) => state.postReducer);
-  console.log(posts);
 
   return (
     <div>
@@ -17,9 +16,7 @@ const App = () => {
       <div className="content">
         <div className="post-container">
           {!isEmpty(posts) &&
-            posts.map((post, index) =>
-              <Post post={post} key={index} />
-            )}
+            posts.map((post, index) => <Post post={post} key={index} />)}
         </div>
         <User />
       </div>

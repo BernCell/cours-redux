@@ -10,7 +10,7 @@ export default function postReducer(state = initialState, action) {
         case ADD_POST:
             return [action.payload, ...state]
         default:
-            return state
+            return state;
     }
 
 }
