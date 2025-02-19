@@ -15,7 +15,7 @@ const PostForm = () => {
       author: user.pseudo,
       title: form.current[0].value,
       content: form.current[1].value,
-      likes: 0
+      likes: 0,
     }
 
     await dispatch(addPost(postData))
