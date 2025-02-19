@@ -4,9 +4,9 @@ import { addPost, getPosts } from "../actions/post.action";
 
 
 const PostForm = () => {
-  const form = useRef()
-  const user = useSelector((state) => state.userReducer)
-  const dispatch = useDispatch()
+  const form = useRef();
+  const user = useSelector((state) => state.userReducer);
+  const dispatch = useDispatch();
 
   const handleForm = async (e) => {
     e.preventDefault();

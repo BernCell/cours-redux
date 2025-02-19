@@ -6,12 +6,12 @@ import { editPost } from "../actions/post.action";
 
 const Post = ({ post }) => {
   const [editToggle, setEditToggle] = useState(false);
-  const user = useSelector((state) => state.userReducer)
+  const user = useSelector((state) => state.userReducer);
   const [editContent, setEditContent] = useState(post.content);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const handleEdit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     const postData = {
       title: post.title,
