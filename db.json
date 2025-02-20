@@ -5,7 +5,7 @@
       "author": "Patrice",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum?",
       "id": "1",
-      "likes": 29
+      "likes": 38
     },
     {
       "title": "Lorem ipsum dolor sit amet dolor sit amet",
@@ -39,7 +39,7 @@
   "user": [
     {
       "pseudo": "user42",
-      "likes": 0,
+      "likes": 2,
       "age": 30,
       "id": "1"
     }
