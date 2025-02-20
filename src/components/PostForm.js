@@ -12,6 +12,7 @@ const PostForm = () => {
     e.preventDefault();
 
     const postData = {
+
       author: user.pseudo,
       title: form.current[0].value,
       content: form.current[1].value,
