@@ -34,12 +34,19 @@
       "title": "Test2",
       "content": "Let's have some fun",
       "likes": 0
+    },
+    {
+      "title": "Nouveau post",
+      "author": "user42",
+      "content": "Match de foot",
+      "id": "cef7",
+      "likes": 2
     }
   ],
   "user": [
     {
       "pseudo": "user42",
-      "likes": 2,
+      "likes": 4,
       "age": 30,
       "id": "1"
     }
